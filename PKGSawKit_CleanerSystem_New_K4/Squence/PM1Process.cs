@@ -934,7 +934,7 @@ namespace PKGSawKit_CleanerSystem_New_K4.Squence
                     Global.SetDigValue((int)DigOutputList.CH1_AirValve_Bot_o, (uint)DigitalOffOn.On, ModuleName);
 
                     checkFlag.AirFlag = true;
-                }                
+                }
 
                 // Water
                 if (prcsRecipe.Water[prcsRecipe.StepNum - 1] == "On")
