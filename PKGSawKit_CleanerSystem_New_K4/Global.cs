@@ -715,10 +715,15 @@ namespace PKGSawKit_CleanerSystem_New_K4
             if (GetDigValue((int)DigInputList.CH1_Door_Sensor_i) == "Off")
             {
                 if ((Define.seqMode[(byte)MODULE._PM1] == Define.MODE_PROCESS) && (Define.seqCtrl[(byte)MODULE._PM1] == Define.CTRL_RUNNING))
-                {
+                {                   
                     if (Define.seqCtrl[(byte)MODULE._PM1] != Define.CTRL_WAIT)
+                    {
                         Define.seqCtrl[(byte)MODULE._PM1] = Define.CTRL_WAIT;
-                }
+
+                        SetDigValue((int)DigOutputList.CH1_Brush_Pwr_o, (uint)DigitalOffOn.Off, "PM1");
+                        SetDigValue((int)DigOutputList.CH1_Brush_FwdBwd_o, (uint)DigitalOffOn.Off, "PM1");
+                    }                        
+                }                
 
                 // 모터는 매뉴얼 동작이라도 멈추게
                 if (Define.seqCylinderCtrl[(byte)MODULE._PM1] != Define.CTRL_WAIT)

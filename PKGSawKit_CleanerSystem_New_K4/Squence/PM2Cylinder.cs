@@ -157,6 +157,8 @@ namespace PKGSawKit_CleanerSystem_New_K4.Squence
                 step.Times = 1;
                 step.Flag = true;
 
+                bWaitSet = false;
+
                 Define.seqCylinderCtrl[module] = Define.CTRL_RUNNING;
                 Define.seqCylinderSts[module] = Define.STS_CYLINDER_RUNING;                
 
@@ -198,7 +200,9 @@ namespace PKGSawKit_CleanerSystem_New_K4.Squence
                 Thread.Sleep(500);
                 step.Layer = 1;
                 step.Times = 1;
-                step.Flag = true;                
+                step.Flag = true;
+
+                bWaitSet = false;
 
                 Define.seqCylinderCtrl[module] = Define.CTRL_RUNNING;
                 Define.seqCylinderSts[module] = Define.STS_CYLINDER_HOMEING;                
@@ -237,6 +241,8 @@ namespace PKGSawKit_CleanerSystem_New_K4.Squence
                 step.Times = 1;
                 step.Flag = true;
 
+                bWaitSet = false;
+
                 Define.seqCylinderCtrl[module] = Define.CTRL_RUNNING;
                 Define.seqCylinderSts[module] = Define.STS_CYLINDER_FWDING;
                 step.Times = 1;
@@ -274,6 +280,8 @@ namespace PKGSawKit_CleanerSystem_New_K4.Squence
                 step.Layer = 1;
                 step.Times = 1;
                 step.Flag = true;
+
+                bWaitSet = false;
 
                 Define.seqCylinderCtrl[module] = Define.CTRL_RUNNING;
                 Define.seqCylinderSts[module] = Define.STS_CYLINDER_BWDING;

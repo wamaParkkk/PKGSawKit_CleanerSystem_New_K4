@@ -629,6 +629,12 @@ namespace PKGSawKit_CleanerSystem_New_K4
                         digitalDlg.Init2("Home", "Backward", "Forward", "Nozzle Fwd/Bwd");
                         if (digitalDlg.ShowDialog() == DialogResult.OK)
                         {
+                            if (Global.GetDigValue((int)DigInputList.CH2_Door_Sensor_i) == "Off")
+                            {
+                                MessageBox.Show("Chamber door is opened", "Notification");
+                                return;
+                            }
+
                             if (digitalDlg.m_strResult == "Home")
                             {
                                 //Global.SetDigValue((int)DigOutputList.CH2_Nozzle_Pwr_o, (uint)DigitalOffOn.Off, ModuleName);
@@ -707,6 +713,12 @@ namespace PKGSawKit_CleanerSystem_New_K4
                                         MessageBox.Show("Back door가 열려 있습니다", "알림");
                                         return;
                                     }
+
+                                    if (Global.GetDigValue((int)DigInputList.CH2_Door_Sensor_i) == "Off")
+                                    {
+                                        MessageBox.Show("Chamber door is opened", "Notification");
+                                        return;
+                                    }
                                 }
 
                                 Define.seqMode[module] = Define.MODE_PROCESS;
@@ -743,6 +755,12 @@ namespace PKGSawKit_CleanerSystem_New_K4
                             if (Global.GetDigValue((int)DigInputList.Back_Door_Sensor_i) == "Off")
                             {
                                 MessageBox.Show("Back door가 열려 있습니다", "알림");
+                                return;
+                            }
+
+                            if (Global.GetDigValue((int)DigInputList.CH2_Door_Sensor_i) == "Off")
+                            {
+                                MessageBox.Show("Chamber door is opened", "Notification");
                                 return;
                             }
                         }
@@ -795,6 +813,12 @@ namespace PKGSawKit_CleanerSystem_New_K4
                             if (Global.GetDigValue((int)DigInputList.Back_Door_Sensor_i) == "Off")
                             {
                                 MessageBox.Show("Back door가 열려 있습니다", "알림");
+                                return;
+                            }
+
+                            if (Global.GetDigValue((int)DigInputList.CH2_Door_Sensor_i) == "Off")
+                            {
+                                MessageBox.Show("Chamber door is opened", "Notification");
                                 return;
                             }
                         }

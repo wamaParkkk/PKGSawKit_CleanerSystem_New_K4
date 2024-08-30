@@ -148,6 +148,10 @@ namespace PKGSawKit_CleanerSystem_New_K4.Squence
 
                     bWaitSet = true;
 
+                    // Brush를 동작하기 위해 Cylinder(Water/Air)를 Fwd/Bwd를 시키는데, Cylinder쓰레드를 안쓰고 Process쓰레드에서 직접 IO셋팅하기 때문에..
+                    if ((step.Layer == 11) || (step.Layer == 22))
+                        step.Flag = true;
+
                     Global.EventLog("Process has stopped : " + sAction, ModuleName, "Event");
                 }                
             }

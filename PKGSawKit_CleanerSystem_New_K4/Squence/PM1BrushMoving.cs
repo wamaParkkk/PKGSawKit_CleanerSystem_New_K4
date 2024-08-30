@@ -163,6 +163,8 @@ namespace PKGSawKit_CleanerSystem_New_K4.Squence
                 step.Times = 1;
                 step.Flag = true;
 
+                bWaitSet = false;
+
                 Define.seqBrushFwBwCtrl = Define.CTRL_RUNNING;
                 Define.seqBrushFwBwSts = Define.STS_BRUSH_FWBW_RUNING;                
 
@@ -206,6 +208,8 @@ namespace PKGSawKit_CleanerSystem_New_K4.Squence
                 step.Times = 1;
                 step.Flag = true;
 
+                bWaitSet = false;
+
                 Define.seqBrushFwBwCtrl = Define.CTRL_RUNNING;
                 Define.seqBrushFwBwSts = Define.STS_BRUSH_FWBW_HOMEING;                
 
@@ -242,6 +246,8 @@ namespace PKGSawKit_CleanerSystem_New_K4.Squence
                 step.Layer = 1;
                 step.Times = 1;
                 step.Flag = true;
+
+                bWaitSet = false;
 
                 Define.seqBrushFwBwCtrl = Define.CTRL_RUNNING;
                 Define.seqBrushFwBwSts = Define.STS_BRUSH_FWBW_FWDING;
@@ -280,6 +286,8 @@ namespace PKGSawKit_CleanerSystem_New_K4.Squence
                 step.Layer = 1;
                 step.Times = 1;
                 step.Flag = true;
+
+                bWaitSet = false;
 
                 Define.seqBrushFwBwCtrl = Define.CTRL_RUNNING;
                 Define.seqBrushFwBwSts = Define.STS_BRUSH_FWBW_BWDING;
