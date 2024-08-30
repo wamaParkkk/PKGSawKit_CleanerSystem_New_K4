@@ -735,7 +735,7 @@ namespace PKGSawKit_CleanerSystem_New_K4
                         Define.seqCtrl[(byte)MODULE._PM1] = Define.CTRL_RUNNING;
                 }
 
-                if (Define.seqCtrl[(byte)MODULE._PM1] == Define.CTRL_WAIT)
+                if (Define.seqCylinderCtrl[(byte)MODULE._PM1] == Define.CTRL_WAIT)
                 {
                     // Water, Air cylinder
                     if ((Define.seqCylinderMode[(byte)MODULE._PM1] == Define.MODE_CYLINDER_RUN) &&
@@ -826,7 +826,7 @@ namespace PKGSawKit_CleanerSystem_New_K4
                         Define.seqCtrl[(byte)MODULE._PM2] = Define.CTRL_RUNNING;
                 }
 
-                if (Define.seqCtrl[(byte)MODULE._PM2] == Define.CTRL_WAIT)
+                if (Define.seqCylinderCtrl[(byte)MODULE._PM2] == Define.CTRL_WAIT)
                 {
                     if ((Define.seqCylinderMode[(byte)MODULE._PM2] == Define.MODE_CYLINDER_RUN) &&
                         (Define.seqCylinderSts[(byte)MODULE._PM2] == Define.STS_CYLINDER_RUNING))

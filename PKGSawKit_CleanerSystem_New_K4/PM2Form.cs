@@ -177,6 +177,19 @@ namespace PKGSawKit_CleanerSystem_New_K4
                     btnInit.BackColor = Color.Transparent;
             }
 
+            if ((Define.seqMode[module] == Define.MODE_PROCESS) && (Define.seqCtrl[module] == Define.CTRL_WAIT))
+            {
+                if (labelProcessWait.ForeColor == Color.LightGray)
+                    labelProcessWait.ForeColor = Color.Red;
+                else
+                    labelProcessWait.ForeColor = Color.LightGray;
+            }
+            else
+            {
+                if (labelProcessWait.ForeColor != Color.LightGray)
+                    labelProcessWait.ForeColor = Color.LightGray;
+            }
+
             // Process recipe 정보
             if (Global.prcsInfo.prcsRecipeName[module] != null)
                 textBoxRecipeName.Text = Global.prcsInfo.prcsRecipeName[module];
@@ -241,6 +254,16 @@ namespace PKGSawKit_CleanerSystem_New_K4
                     PM2NozzleHomeSns.BackColor = Color.Silver;
             }
 
+            if (Global.GetDigValue((int)DigInputList.CH2_Door_Sensor_i) == "Off")
+            {
+                textBoxDoor.Text = "Open";
+                textBoxDoor.BackColor = Color.OrangeRed;
+            }
+            else if (Global.GetDigValue((int)DigInputList.CH2_Door_Sensor_i) == "On")
+            {
+                textBoxDoor.Text = "Close";
+                textBoxDoor.BackColor = Color.LightSkyBlue;
+            }
 
             // Output display
             if ((Global.digSet.curDigSet[(int)DigOutputList.CH2_Nozzle_Pwr_o] == "On") &&

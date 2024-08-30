@@ -10,6 +10,7 @@ namespace PKGSawKit_CleanerSystem_New_K4.Squence
         Thread thread;
         private new TStep step;
         Alarm_List alarm_List;  // Alarm list
+        private bool bWaitSet;
 
         public PM1Cylinder()
         {
@@ -89,10 +90,15 @@ namespace PKGSawKit_CleanerSystem_New_K4.Squence
             }
             else if (sAction == "Wait")
             {
-                Global.SetDigValue((int)DigOutputList.CH1_Nozzle_Pwr_o, (uint)DigitalOffOn.Off, ModuleName);
-                Global.SetDigValue((int)DigOutputList.CH1_Nozzle_FwdBwd_o, (uint)DigitalOffOn.Off, ModuleName);
+                if (!bWaitSet)
+                {
+                    bWaitSet = true;
 
-                Global.EventLog("Cylinder movement stopped : " + sAction, ModuleName, "Event");
+                    Global.SetDigValue((int)DigOutputList.CH1_Nozzle_Pwr_o, (uint)DigitalOffOn.Off, ModuleName);
+                    Global.SetDigValue((int)DigOutputList.CH1_Nozzle_FwdBwd_o, (uint)DigitalOffOn.Off, ModuleName);
+
+                    Global.EventLog("Cylinder movement stopped : " + sAction, ModuleName, "Event");
+                }                
             }
         }
 

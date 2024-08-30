@@ -11,6 +11,7 @@ namespace PKGSawKit_CleanerSystem_New_K4.Squence
         Thread thread;
         private new TStep step;
         Alarm_List alarm_List;  // Alarm list
+        private bool bWaitSet;
 
         public PM1BrushMoving()
         {
@@ -91,12 +92,17 @@ namespace PKGSawKit_CleanerSystem_New_K4.Squence
 
             else if (sAction == "Wait")
             {
-                Global.SetDigValue((int)DigOutputList.CH1_Brush_Pwr_o, (uint)DigitalOffOn.Off, ModuleName);
-                Global.SetDigValue((int)DigOutputList.CH1_Brush_FwdBwd_o, (uint)DigitalOffOn.Off, ModuleName);
+                if (!bWaitSet)
+                {
+                    bWaitSet = true;
 
-                MotionClass.SetMotorSStop(Define.axis_r);
+                    Global.SetDigValue((int)DigOutputList.CH1_Brush_Pwr_o, (uint)DigitalOffOn.Off, ModuleName);
+                    Global.SetDigValue((int)DigOutputList.CH1_Brush_FwdBwd_o, (uint)DigitalOffOn.Off, ModuleName);
 
-                Global.EventLog("Brush Cylinder movement stopped : " + sAction, ModuleName, "Event");
+                    MotionClass.SetMotorSStop(Define.axis_r);
+
+                    Global.EventLog("Brush Cylinder movement stopped : " + sAction, ModuleName, "Event");
+                }                
             }
         }
 

@@ -318,23 +318,23 @@ namespace PKGSawKit_CleanerSystem_New_K4
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.Silver;
+            this.label27.ForeColor = System.Drawing.Color.Navy;
             this.label27.Location = new System.Drawing.Point(39, 391);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(116, 25);
+            this.label27.Size = new System.Drawing.Size(159, 25);
             this.label27.TabIndex = 101;
-            this.label27.Text = "[X12] Spare";
+            this.label27.Text = "[X12] CH2. Door";
             // 
             // label28
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.Silver;
+            this.label28.ForeColor = System.Drawing.Color.Navy;
             this.label28.Location = new System.Drawing.Point(39, 362);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(116, 25);
+            this.label28.Size = new System.Drawing.Size(159, 25);
             this.label28.TabIndex = 100;
-            this.label28.Text = "[X11] Spare";
+            this.label28.Text = "[X11] CH1. Door";
             // 
             // label20
             // 
@@ -915,9 +915,9 @@ namespace PKGSawKit_CleanerSystem_New_K4
             this.labe27.ForeColor = System.Drawing.Color.Navy;
             this.labe27.Location = new System.Drawing.Point(39, 159);
             this.labe27.Name = "labe27";
-            this.labe27.Size = new System.Drawing.Size(156, 25);
+            this.labe27.Size = new System.Drawing.Size(161, 25);
             this.labe27.TabIndex = 95;
-            this.labe27.Text = "[X26] Back door";
+            this.labe27.Text = "[X26] Back cover";
             // 
             // pnl_DI22
             // 
@@ -942,9 +942,9 @@ namespace PKGSawKit_CleanerSystem_New_K4
             this.label26.ForeColor = System.Drawing.Color.Navy;
             this.label26.Location = new System.Drawing.Point(39, 130);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(161, 25);
+            this.label26.Size = new System.Drawing.Size(166, 25);
             this.label26.TabIndex = 94;
-            this.label26.Text = "[X25] Right door";
+            this.label26.Text = "[X25] Right cover";
             // 
             // pnl_DI24
             // 
@@ -969,9 +969,9 @@ namespace PKGSawKit_CleanerSystem_New_K4
             this.label24.ForeColor = System.Drawing.Color.Navy;
             this.label24.Location = new System.Drawing.Point(39, 72);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(163, 25);
+            this.label24.Size = new System.Drawing.Size(168, 25);
             this.label24.TabIndex = 92;
-            this.label24.Text = "[X23] Front door";
+            this.label24.Text = "[X23] Front cover";
             // 
             // label23
             // 
@@ -991,9 +991,9 @@ namespace PKGSawKit_CleanerSystem_New_K4
             this.label25.ForeColor = System.Drawing.Color.Navy;
             this.label25.Location = new System.Drawing.Point(39, 101);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(148, 25);
+            this.label25.Size = new System.Drawing.Size(153, 25);
             this.label25.TabIndex = 93;
-            this.label25.Text = "[X24] Left door";
+            this.label25.Text = "[X24] Left cover";
             // 
             // pnl_DI26
             // 
