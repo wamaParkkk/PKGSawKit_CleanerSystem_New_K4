@@ -296,7 +296,7 @@ namespace PKGSawKit_CleanerSystem_New_K4
             this.labelPageName.BackColor = System.Drawing.Color.Transparent;
             this.labelPageName.Font = new System.Drawing.Font("Nirmala UI", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPageName.ForeColor = System.Drawing.Color.White;
-            this.labelPageName.Location = new System.Drawing.Point(50, 16);
+            this.labelPageName.Location = new System.Drawing.Point(20, 16);
             this.labelPageName.Name = "labelPageName";
             this.labelPageName.Size = new System.Drawing.Size(55, 54);
             this.labelPageName.TabIndex = 149;

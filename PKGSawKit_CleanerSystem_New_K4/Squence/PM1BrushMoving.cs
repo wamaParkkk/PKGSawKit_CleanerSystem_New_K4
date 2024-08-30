@@ -43,6 +43,10 @@ namespace PKGSawKit_CleanerSystem_New_K4.Squence
                     {
                         AlarmAction("Retry");
                     }
+                    else if (Define.seqBrushFwBwCtrl == Define.CTRL_WAIT)
+                    {
+                        AlarmAction("Wait");
+                    }
 
                     Run_Progress();
                     Home_Progress();
@@ -83,6 +87,16 @@ namespace PKGSawKit_CleanerSystem_New_K4.Squence
                 step.Times = 1;                
 
                 Global.EventLog("Brush cylinder movement stopped : " + sAction, ModuleName, "Event");
+            }
+
+            else if (sAction == "Wait")
+            {
+                Global.SetDigValue((int)DigOutputList.CH1_Brush_Pwr_o, (uint)DigitalOffOn.Off, ModuleName);
+                Global.SetDigValue((int)DigOutputList.CH1_Brush_FwdBwd_o, (uint)DigitalOffOn.Off, ModuleName);
+
+                MotionClass.SetMotorSStop(Define.axis_r);
+
+                Global.EventLog("Brush Cylinder movement stopped : " + sAction, ModuleName, "Event");
             }
         }
 
