@@ -89,7 +89,6 @@ namespace PKGSawKit_CleanerSystem_New_K4.Squence
 
                 Global.EventLog("Brush cylinder movement stopped : " + sAction, ModuleName, "Event");
             }
-
             else if (sAction == "Wait")
             {
                 if (!bWaitSet)
