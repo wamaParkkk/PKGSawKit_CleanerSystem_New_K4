@@ -120,6 +120,8 @@ namespace PKGSawKit_CleanerSystem_New_K4
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.labelCH2ProcessWait = new System.Windows.Forms.Label();
             this.textBoxCH2Door = new System.Windows.Forms.TextBox();
+            this.textBoxCH1ToolBarcode = new System.Windows.Forms.TextBox();
+            this.textBoxCH2ToolBarcode = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.PM1_Door_Close.SuspendLayout();
@@ -673,7 +675,7 @@ namespace PKGSawKit_CleanerSystem_New_K4
             this.btnPM1InitStop.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnPM1InitStop.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPM1InitStop.ForeColor = System.Drawing.Color.Red;
-            this.btnPM1InitStop.Location = new System.Drawing.Point(403, 159);
+            this.btnPM1InitStop.Location = new System.Drawing.Point(474, 113);
             this.btnPM1InitStop.Name = "btnPM1InitStop";
             this.btnPM1InitStop.Size = new System.Drawing.Size(65, 40);
             this.btnPM1InitStop.TabIndex = 422;
@@ -711,7 +713,7 @@ namespace PKGSawKit_CleanerSystem_New_K4
             this.btnPM2InitStop.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnPM2InitStop.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPM2InitStop.ForeColor = System.Drawing.Color.Red;
-            this.btnPM2InitStop.Location = new System.Drawing.Point(926, 159);
+            this.btnPM2InitStop.Location = new System.Drawing.Point(1104, 65);
             this.btnPM2InitStop.Name = "btnPM2InitStop";
             this.btnPM2InitStop.Size = new System.Drawing.Size(65, 40);
             this.btnPM2InitStop.TabIndex = 424;
@@ -730,7 +732,7 @@ namespace PKGSawKit_CleanerSystem_New_K4
             this.btnPM2Init.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnPM2Init.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPM2Init.ForeColor = System.Drawing.Color.Navy;
-            this.btnPM2Init.Location = new System.Drawing.Point(926, 113);
+            this.btnPM2Init.Location = new System.Drawing.Point(1104, 19);
             this.btnPM2Init.Name = "btnPM2Init";
             this.btnPM2Init.Size = new System.Drawing.Size(65, 40);
             this.btnPM2Init.TabIndex = 423;
@@ -1285,12 +1287,34 @@ namespace PKGSawKit_CleanerSystem_New_K4
             this.textBoxCH2Door.Text = "--";
             this.textBoxCH2Door.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // textBoxCH1ToolBarcode
+            // 
+            this.textBoxCH1ToolBarcode.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCH1ToolBarcode.ForeColor = System.Drawing.Color.Blue;
+            this.textBoxCH1ToolBarcode.Location = new System.Drawing.Point(403, 159);
+            this.textBoxCH1ToolBarcode.Multiline = true;
+            this.textBoxCH1ToolBarcode.Name = "textBoxCH1ToolBarcode";
+            this.textBoxCH1ToolBarcode.Size = new System.Drawing.Size(172, 57);
+            this.textBoxCH1ToolBarcode.TabIndex = 479;
+            // 
+            // textBoxCH2ToolBarcode
+            // 
+            this.textBoxCH2ToolBarcode.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCH2ToolBarcode.ForeColor = System.Drawing.Color.Blue;
+            this.textBoxCH2ToolBarcode.Location = new System.Drawing.Point(926, 113);
+            this.textBoxCH2ToolBarcode.Multiline = true;
+            this.textBoxCH2ToolBarcode.Name = "textBoxCH2ToolBarcode";
+            this.textBoxCH2ToolBarcode.Size = new System.Drawing.Size(172, 103);
+            this.textBoxCH2ToolBarcode.TabIndex = 480;
+            // 
             // OperationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1172, 824);
+            this.Controls.Add(this.textBoxCH2ToolBarcode);
+            this.Controls.Add(this.textBoxCH1ToolBarcode);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.panel1);
@@ -1460,5 +1484,7 @@ namespace PKGSawKit_CleanerSystem_New_K4
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label labelCH2ProcessWait;
         private System.Windows.Forms.TextBox textBoxCH2Door;
+        private System.Windows.Forms.TextBox textBoxCH1ToolBarcode;
+        private System.Windows.Forms.TextBox textBoxCH2ToolBarcode;
     }
 }

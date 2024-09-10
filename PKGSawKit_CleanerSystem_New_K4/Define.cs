@@ -413,7 +413,6 @@
         public const int axis_r = 0;   // Brush rotation axis
 
         // PKG saw-kit barcode
-        public static string[] strCH1ToolBarcode = { string.Empty, string.Empty };
-        public static string[] strCH2ToolBarcode = { string.Empty, string.Empty, string.Empty, string.Empty, string.Empty };
+        public static string[] strToolBarcode = { string.Empty, string.Empty };        
     }    
 }

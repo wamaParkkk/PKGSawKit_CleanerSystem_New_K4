@@ -235,7 +235,7 @@ namespace PKGSawKit_CleanerSystem_New_K4.Squence
 
                 bWaitSet = false;
 
-                Global.EventLog("", ModuleName, "Event");
+                Global.EventLog($"<<< {Define.strToolBarcode[module]} >>>", ModuleName, "Event");
 
                 Define.seqCtrl[module] = Define.CTRL_RUNNING;
                 Define.seqSts[module] = Define.STS_PROCESS_ING;

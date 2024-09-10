@@ -42,7 +42,10 @@ namespace PKGSawKit_CleanerSystem_New_K4
             Left = 0;
 
             SetDoubleBuffered(PM1_Door_Close);            
-            SetDoubleBuffered(PM2_Door_Close);            
+            SetDoubleBuffered(PM2_Door_Close);
+
+            textBoxCH1ToolBarcode.Focus();
+            //textBoxCH2ToolBarcode.Focus();
         }
 
         private void SetDoubleBuffered(Control control, bool doubleBuffered = true)
@@ -203,7 +206,9 @@ namespace PKGSawKit_CleanerSystem_New_K4
 
             textBoxPM1ProcessTime.Text = Global.prcsInfo.prcsStepCurrentTime[(byte)MODULE._PM1].ToString() + " / " + Global.prcsInfo.prcsStepTotalTime[(byte)MODULE._PM1].ToString();
             textBoxPM1ProcessEndTime.Text = Global.prcsInfo.prcsEndTime[(byte)MODULE._PM1];
-            
+
+            Define.strToolBarcode[(byte)MODULE._PM1] = textBoxCH1ToolBarcode.Text.ToString();
+
 
             if ((Global.GetDigValue((int)DigInputList.CH1_Brush_Fwd_i) == "On") &&
                 (Global.GetDigValue((int)DigInputList.CH1_Brush_Bwd_i) == "Off") &&
@@ -526,6 +531,8 @@ namespace PKGSawKit_CleanerSystem_New_K4
 
             textBoxPM2ProcessTime.Text = Global.prcsInfo.prcsStepCurrentTime[(byte)MODULE._PM2].ToString() + " / " + Global.prcsInfo.prcsStepTotalTime[(byte)MODULE._PM2].ToString();
             textBoxPM2ProcessEndTime.Text = Global.prcsInfo.prcsEndTime[(byte)MODULE._PM2];
+
+            Define.strToolBarcode[(byte)MODULE._PM2] = textBoxCH2ToolBarcode.Text.ToString();
 
 
             if ((Global.GetDigValue((int)DigInputList.CH2_Nozzle_Fwd_i) == "On") &&
