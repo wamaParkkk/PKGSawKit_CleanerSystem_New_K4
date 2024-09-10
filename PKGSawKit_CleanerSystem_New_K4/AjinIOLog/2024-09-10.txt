@@ -1,0 +1,2 @@
+[2024-09-10, 11:34:29] Could not do the open the driver
+[2024-09-10, 15:55:03] Could not do the open the driver

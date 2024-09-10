@@ -235,6 +235,8 @@ namespace PKGSawKit_CleanerSystem_New_K4.Squence
 
                 bWaitSet = false;
 
+                Global.EventLog("", ModuleName, "Event");
+
                 Define.seqCtrl[module] = Define.CTRL_RUNNING;
                 Define.seqSts[module] = Define.STS_PROCESS_ING;
 
@@ -984,7 +986,8 @@ namespace PKGSawKit_CleanerSystem_New_K4.Squence
             {
                 if (sAct == "Run")
                 {
-                    if ((Define.seqCylinderMode[module] == Define.MODE_CYLINDER_IDLE) && (Define.seqCylinderCtrl[module] == Define.CTRL_IDLE))
+                    if ( ((Define.seqCylinderMode[module] == Define.MODE_CYLINDER_IDLE) && (Define.seqCylinderCtrl[module] == Define.CTRL_IDLE)) ||
+                         (Define.seqCylinderCtrl[module] == Define.CTRL_WAIT) )
                     {
                         Define.seqCylinderMode[module] = Define.MODE_CYLINDER_RUN;
                         Define.seqCylinderCtrl[module] = Define.CTRL_RUN;
