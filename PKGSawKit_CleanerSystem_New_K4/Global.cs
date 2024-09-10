@@ -597,7 +597,7 @@ namespace PKGSawKit_CleanerSystem_New_K4
                 // Water tank level 센서 체크 ////////////////////////////////////////////////////////////////                
                 if (GetDigValue((int)DigInputList.Water_Level_High_i) == "Off")
                 {
-                    if (nSeqWaitCnt >= 100)     // 10초 대기
+                    if (nSeqWaitCnt >= 30)     // 3초 대기
                     {
                         if (digSet.curDigSet[(int)DigOutputList.Main_Water_Supply] != "On")
                         {
@@ -622,7 +622,7 @@ namespace PKGSawKit_CleanerSystem_New_K4
                         nSeqWaitCnt = 0;
                 }
 
-                if (GetDigValue((int)DigInputList.Water_Level_Low_i) == "Off")
+                if (GetDigValue((int)DigInputList.Water_Level_Low_i) == "On")   // B접
                 {
                     if (digSet.curDigSet[(int)DigOutputList.Hot_WaterHeater_o] != null)
                     {

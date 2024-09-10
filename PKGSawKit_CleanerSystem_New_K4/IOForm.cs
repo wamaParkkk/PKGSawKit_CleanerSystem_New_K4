@@ -65,13 +65,27 @@ namespace PKGSawKit_CleanerSystem_New_K4
         {            
             for (int i = 0; i < Define.CH_MAX; i++)
             {
-                if (Global.GetDigValue(i) == "On")
+                if (i == 10)
                 {
-                    m_diBox[i].BackColor = Color.Lime;
+                    if (Global.GetDigValue(i) == "Off")
+                    {
+                        m_diBox[i].BackColor = Color.Lime;
+                    }
+                    else
+                    {
+                        m_diBox[i].BackColor = Color.DimGray;
+                    }
                 }
                 else
                 {
-                    m_diBox[i].BackColor = Color.DimGray;
+                    if (Global.GetDigValue(i) == "On")
+                    {
+                        m_diBox[i].BackColor = Color.Lime;
+                    }
+                    else
+                    {
+                        m_diBox[i].BackColor = Color.DimGray;
+                    }
                 }
             }
 
