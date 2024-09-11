@@ -679,7 +679,7 @@ namespace PKGSawKit_CleanerSystem_New_K4.Squence
             Define.seqSts[module] = Define.STS_PROCESS_END;
 
             // Process end buzzer
-            //Global.SetDigValue((int)DigOutputList.Buzzer_o, (uint)DigitalOffOn.On, ModuleName);
+            Global.SetDigValue((int)DigOutputList.Buzzer_o, (uint)DigitalOffOn.On, ModuleName);
 
             Global.EventLog("PROCESS COMPLETED.", ModuleName, "Event");
 
