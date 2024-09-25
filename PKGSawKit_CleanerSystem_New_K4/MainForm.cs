@@ -724,7 +724,7 @@ namespace PKGSawKit_CleanerSystem_New_K4
                 if (!bLogCnt)
                 {
                     // 가동 시간 및 가동률 서버 업데이트
-                    RUNTIME_UPDATE();
+                    //RUNTIME_UPDATE();
 
                     // 가동 시간 초기화
                     RUNTIME_INIT();
