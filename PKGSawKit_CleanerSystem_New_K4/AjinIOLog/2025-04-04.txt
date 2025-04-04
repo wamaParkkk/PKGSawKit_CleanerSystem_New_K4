@@ -6,3 +6,6 @@
 [2025-04-04, 16:31:43] Could not do the open the driver
 [2025-04-04, 16:32:03] Could not do the open the driver
 [2025-04-04, 16:33:30] Could not do the open the driver
+[2025-04-04, 17:03:50] Could not do the open the driver
+[2025-04-04, 17:05:47] Could not do the open the driver
+[2025-04-04, 17:13:56] Could not do the open the driver

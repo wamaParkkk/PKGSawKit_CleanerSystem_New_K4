@@ -93,7 +93,7 @@ namespace PKGSawKit_CleanerSystem_New_K4
             AnaDlg = new AnalogDlg();
             AnaDlg.Init();
             if (AnaDlg.ShowDialog() == DialogResult.OK)
-            {
+            {               
                 textBox.Text = AnaDlg.m_strResult;
 
                 string[] sVal = new string[1];
@@ -103,6 +103,30 @@ namespace PKGSawKit_CleanerSystem_New_K4
                 {
                     MessageBox.Show("잘못 된 값이 입력되었습니다.", "알림", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     textBox.Text = "0";
+                }
+            }
+        }
+
+        private void txtBoxBrushRotationSpeed_Click(object sender, EventArgs e)
+        {
+            TextBox textBox = (TextBox)sender;
+
+            AnaDlg = new AnalogDlg();
+            AnaDlg.Init();
+            if (AnaDlg.ShowDialog() == DialogResult.OK)
+            {
+                string sVal = AnaDlg.m_strResult;
+                bool bResult = int.TryParse(sVal, out int iVal);
+                if ((bResult) && (iVal <= 3000))
+                {
+                    int iVelocity = iVal;
+                    textBox.Text = iVelocity.ToString();
+                }
+                else
+                {
+                    MessageBox.Show("속도 값을 확인해 주세요 (MAX:3000)", "알림", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    MOTION_PARAMETER_LOAD();
                 }
             }
         }
@@ -175,6 +199,6 @@ namespace PKGSawKit_CleanerSystem_New_K4
                 MessageBox.Show(ex.Message, "알림");
                 return false;
             }
-        }
+        }        
     }
 }

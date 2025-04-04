@@ -48,6 +48,7 @@ namespace PKGSawKit_CleanerSystem_New_K4
             this.txtBoxBrushRotationSpeed = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -218,6 +219,7 @@ namespace PKGSawKit_CleanerSystem_New_K4
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.btnMotionParameterSave);
             this.groupBox2.Controls.Add(this.txtBoxBrushRotationSpeed);
             this.groupBox2.Controls.Add(this.label10);
@@ -266,8 +268,9 @@ namespace PKGSawKit_CleanerSystem_New_K4
             this.txtBoxBrushRotationSpeed.ReadOnly = true;
             this.txtBoxBrushRotationSpeed.Size = new System.Drawing.Size(152, 30);
             this.txtBoxBrushRotationSpeed.TabIndex = 30;
+            this.txtBoxBrushRotationSpeed.Tag = "";
             this.txtBoxBrushRotationSpeed.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtBoxBrushRotationSpeed.Click += new System.EventHandler(this.txtBoxDoorOpenCloseTimeout_Click);
+            this.txtBoxBrushRotationSpeed.Click += new System.EventHandler(this.txtBoxBrushRotationSpeed_Click);
             // 
             // label10
             // 
@@ -291,6 +294,18 @@ namespace PKGSawKit_CleanerSystem_New_K4
             this.label11.Size = new System.Drawing.Size(76, 21);
             this.label11.TabIndex = 24;
             this.label11.Text = "Unit/Sec";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Navy;
+            this.label3.Location = new System.Drawing.Point(386, 102);
+            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(99, 21);
+            this.label3.TabIndex = 42;
+            this.label3.Text = "(Max: 3000)";
             // 
             // ConfigureForm
             // 
@@ -334,5 +349,6 @@ namespace PKGSawKit_CleanerSystem_New_K4
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.TextBox txtBoxBrushRotateTimeout;
         private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label3;
     }
 }

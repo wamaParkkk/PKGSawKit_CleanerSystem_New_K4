@@ -33,3 +33,6 @@
 [2025-04-04, 16:35:42] Buzzer_o : On
 [2025-04-04, 16:35:42] PROCESS COMPLETED.
 [2025-04-04, 16:35:42] Tool 이력 데이터가 저장되었습니다
+[2025-04-04, 17:03:50] FluorescentLamp_o : On
+[2025-04-04, 17:05:48] FluorescentLamp_o : On
+[2025-04-04, 17:13:57] FluorescentLamp_o : On

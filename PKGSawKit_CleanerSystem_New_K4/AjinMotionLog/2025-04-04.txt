@@ -37,3 +37,15 @@
 [2025-04-04, 16:33:30] No axis was searched
 [2025-04-04, 16:33:30] Ajin motion driver initialization fail
 [2025-04-04, 16:33:30] Ajin motion driver close
+[2025-04-04, 17:03:50] Axl library initialization completed
+[2025-04-04, 17:03:50] No axis was searched
+[2025-04-04, 17:03:50] Ajin motion driver initialization fail
+[2025-04-04, 17:03:50] Ajin motion driver close
+[2025-04-04, 17:05:47] Axl library initialization completed
+[2025-04-04, 17:05:47] No axis was searched
+[2025-04-04, 17:05:47] Ajin motion driver initialization fail
+[2025-04-04, 17:05:47] Ajin motion driver close
+[2025-04-04, 17:13:56] Axl library initialization completed
+[2025-04-04, 17:13:56] No axis was searched
+[2025-04-04, 17:13:56] Ajin motion driver initialization fail
+[2025-04-04, 17:13:56] Ajin motion driver close

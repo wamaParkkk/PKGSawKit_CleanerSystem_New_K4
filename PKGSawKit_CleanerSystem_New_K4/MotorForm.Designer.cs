@@ -130,14 +130,14 @@ namespace PKGSawKit_CleanerSystem_New_K4
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(303, 225);
+            this.label11.Location = new System.Drawing.Point(303, 217);
             this.label11.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(60, 17);
+            this.label11.Size = new System.Drawing.Size(70, 30);
             this.label11.TabIndex = 300;
-            this.label11.Text = "Unit/Sec";
+            this.label11.Text = "Unit/Sec\r\n(Max:3000)";
             // 
             // textBoxAxis0GearSet
             // 
