@@ -1,0 +1,121 @@
+[2025-04-04, 16:13:23] CH1_AirValve_Top_o : Off
+[2025-04-04, 16:13:23] CH1_AirValve_Bot_o : Off
+[2025-04-04, 16:13:23] CH1_WaterValve_Top_o : Off
+[2025-04-04, 16:13:23] Hot_Water_Pump_o : Off
+[2025-04-04, 16:13:23] Hot_WaterHeater_o : Off
+[2025-04-04, 16:13:23] Main_Water_Supply : Off
+[2025-04-04, 16:13:23] Buzzer_o : On
+[2025-04-04, 16:13:23] CH1_AirValve_Top_o : Off
+[2025-04-04, 16:13:23] CH1_AirValve_Bot_o : Off
+[2025-04-04, 16:13:23] CH1_WaterValve_Top_o : Off
+[2025-04-04, 16:13:23] Hot_Water_Pump_o : Off
+[2025-04-04, 16:13:23] Hot_WaterHeater_o : Off
+[2025-04-04, 16:13:23] Main_Water_Supply : Off
+[2025-04-04, 16:13:23] Buzzer_o : On
+[2025-04-04, 16:13:26] CH1_AirValve_Top_o : Off
+[2025-04-04, 16:13:26] CH1_AirValve_Bot_o : Off
+[2025-04-04, 16:13:26] CH1_WaterValve_Top_o : Off
+[2025-04-04, 16:13:26] Hot_Water_Pump_o : Off
+[2025-04-04, 16:13:26] Hot_WaterHeater_o : Off
+[2025-04-04, 16:13:26] Main_Water_Supply : Off
+[2025-04-04, 16:13:26] Buzzer_o : On
+[2025-04-04, 16:13:34] CH1_AirValve_Top_o : Off
+[2025-04-04, 16:13:34] CH1_AirValve_Bot_o : Off
+[2025-04-04, 16:13:34] CH1_WaterValve_Top_o : Off
+[2025-04-04, 16:13:34] Hot_Water_Pump_o : Off
+[2025-04-04, 16:13:34] Hot_WaterHeater_o : Off
+[2025-04-04, 16:13:34] Main_Water_Supply : Off
+[2025-04-04, 16:13:34] Buzzer_o : On
+[2025-04-04, 16:13:35] CH1_AirValve_Top_o : Off
+[2025-04-04, 16:13:35] CH1_AirValve_Bot_o : Off
+[2025-04-04, 16:13:35] CH1_WaterValve_Top_o : Off
+[2025-04-04, 16:13:35] Hot_Water_Pump_o : Off
+[2025-04-04, 16:13:35] Hot_WaterHeater_o : Off
+[2025-04-04, 16:13:35] Main_Water_Supply : Off
+[2025-04-04, 16:13:35] Buzzer_o : On
+[2025-04-04, 16:13:44] CH1_AirValve_Top_o : Off
+[2025-04-04, 16:13:44] CH1_AirValve_Bot_o : Off
+[2025-04-04, 16:13:44] CH1_WaterValve_Top_o : Off
+[2025-04-04, 16:13:44] Hot_Water_Pump_o : Off
+[2025-04-04, 16:13:44] Hot_WaterHeater_o : Off
+[2025-04-04, 16:13:44] Main_Water_Supply : Off
+[2025-04-04, 16:13:44] Buzzer_o : On
+[2025-04-04, 16:13:44] CH1_AirValve_Top_o : Off
+[2025-04-04, 16:13:44] CH1_AirValve_Bot_o : Off
+[2025-04-04, 16:13:44] CH1_WaterValve_Top_o : Off
+[2025-04-04, 16:13:44] Hot_Water_Pump_o : Off
+[2025-04-04, 16:13:44] Hot_WaterHeater_o : Off
+[2025-04-04, 16:13:44] Main_Water_Supply : Off
+[2025-04-04, 16:13:44] Buzzer_o : On
+[2025-04-04, 16:14:09] [LOG-IN] [000000_Amkor_Master]
+[2025-04-04, 16:14:21] START THE PROCESS.
+[2025-04-04, 16:14:21] Loading the process recipe file.
+[2025-04-04, 16:14:21] Loading the process recipe file.
+[2025-04-04, 16:14:21] Recipe file was successfully read.
+[2025-04-04, 16:14:21] Recipe name : test.csv
+[2025-04-04, 16:14:23] Recipe file was successfully read.
+[2025-04-04, 16:14:23] Recipe name : test.csv
+[2025-04-04, 16:14:23] CH1_Brush_Pwr_o : Off
+[2025-04-04, 16:14:23] CH1_Brush_FwdBwd_o : Off
+[2025-04-04, 16:14:23] Check if brush is used
+[2025-04-04, 16:14:23] CH1_Brush_Pwr_o : Off
+[2025-04-04, 16:14:23] CH1_Brush_FwdBwd_o : Off
+[2025-04-04, 16:14:23] Check if brush is used
+[2025-04-04, 16:14:25] START THE BRUSH CYLINDER HOME.
+[2025-04-04, 16:14:25] CH1_Brush_FwdBwd_o : On
+[2025-04-04, 16:14:25] CH1_Brush_FwdBwd_o : On
+[2025-04-04, 16:14:26] CH1_Brush_Pwr_o : On
+[2025-04-04, 16:14:26] CH1_Brush_Pwr_o : On
+[2025-04-04, 16:14:30] CH1_AirValve_Top_o : Off
+[2025-04-04, 16:14:30] CH1_AirValve_Bot_o : Off
+[2025-04-04, 16:14:30] CH1_WaterValve_Top_o : Off
+[2025-04-04, 16:14:30] CH1_Curtain_AirValve_o : Off
+[2025-04-04, 16:14:30] Process has stopped : Abort
+[2025-04-04, 16:14:30] CH1_AirValve_Top_o : Off
+[2025-04-04, 16:14:30] CH1_AirValve_Top_o : Off
+[2025-04-04, 16:14:30] CH1_AirValve_Bot_o : Off
+[2025-04-04, 16:14:30] CH1_WaterValve_Top_o : Off
+[2025-04-04, 16:14:30] CH1_AirValve_Bot_o : Off
+[2025-04-04, 16:14:30] CH1_Nozzle_Pwr_o : Off
+[2025-04-04, 16:14:30] CH1_Nozzle_FwdBwd_o : Off
+[2025-04-04, 16:14:30] CH1_WaterValve_Top_o : Off
+[2025-04-04, 16:14:30] CH1_WaterValve_Top_o : Off
+[2025-04-04, 16:14:30] CH1_Nozzle_Pwr_o : Off
+[2025-04-04, 16:14:30] CH1_Nozzle_FwdBwd_o : Off
+[2025-04-04, 16:14:30] CH1_AirValve_Bot_o : Off
+[2025-04-04, 16:14:30] CH1_WaterValve_Top_o : Off
+[2025-04-04, 16:14:30] CH1_Brush_Pwr_o : Off
+[2025-04-04, 16:14:30] CH1_Brush_FwdBwd_o : Off
+[2025-04-04, 16:14:30] Brush cylinder movement stopped : Abort
+[2025-04-04, 16:15:28] [LOG-IN] [000000_Amkor_Master]
+[2025-04-04, 16:15:58] START THE PROCESS.
+[2025-04-04, 16:15:58] START THE PROCESS.
+[2025-04-04, 16:15:58] Loading the process recipe file.
+[2025-04-04, 16:15:58] Recipe file was successfully read.
+[2025-04-04, 16:15:58] Recipe name : test.csv
+[2025-04-04, 16:15:58] Recipe file was successfully read.
+[2025-04-04, 16:15:58] Recipe name : test.csv
+[2025-04-04, 16:15:58] CH1_Brush_Pwr_o : Off
+[2025-04-04, 16:15:58] CH1_Brush_FwdBwd_o : Off
+[2025-04-04, 16:15:58] Check if brush is used
+[2025-04-04, 16:15:58] CH1_Brush_Pwr_o : Off
+[2025-04-04, 16:15:58] CH1_Brush_FwdBwd_o : Off
+[2025-04-04, 16:15:58] Check if brush is used
+[2025-04-04, 16:16:00] START THE BRUSH CYLINDER HOME.
+[2025-04-04, 16:16:00] CH1_Brush_FwdBwd_o : On
+[2025-04-04, 16:16:00] CH1_Brush_FwdBwd_o : On
+[2025-04-04, 16:16:01] CH1_Brush_Pwr_o : On
+[2025-04-04, 16:16:01] CH1_Brush_Pwr_o : On
+[2025-04-04, 16:16:35] Buzzer_o : On
+[2025-04-04, 16:16:35] PROCESS COMPLETED.
+[2025-04-04, 16:16:35] Tool 이력 데이터가 저장되었습니다
+[2025-04-04, 16:16:51] CH1_AirValve_Top_o : Off
+[2025-04-04, 16:16:51] CH1_AirValve_Bot_o : Off
+[2025-04-04, 16:16:51] CH1_WaterValve_Top_o : Off
+[2025-04-04, 16:16:51] CH1_Brush_Pwr_o : Off
+[2025-04-04, 16:16:51] CH1_Brush_FwdBwd_o : Off
+[2025-04-04, 16:16:51] Buzzer_o : On
+[2025-04-04, 16:27:35] [LOG-IN] [000000_Amkor_Master]
+[2025-04-04, 16:31:47] [LOG-IN] [000000_Amkor_Master]
+[2025-04-04, 16:32:07] [LOG-IN] [000000_Amkor_Master]
+[2025-04-04, 16:33:34] [LOG-IN] [000000_Amkor_Master]

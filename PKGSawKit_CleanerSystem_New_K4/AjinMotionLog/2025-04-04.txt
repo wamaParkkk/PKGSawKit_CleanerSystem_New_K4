@@ -1,0 +1,39 @@
+[2025-04-04, 16:13:23] Axl library initialization completed
+[2025-04-04, 16:13:23] No axis was searched
+[2025-04-04, 16:13:23] Ajin motion driver initialization fail
+[2025-04-04, 16:13:23] Ajin motion driver close
+[2025-04-04, 16:13:44] Axl library initialization completed
+[2025-04-04, 16:13:44] No axis was searched
+[2025-04-04, 16:13:44] Ajin motion driver initialization fail
+[2025-04-04, 16:13:44] Ajin motion driver close
+[2025-04-04, 16:14:05] Axl library initialization completed
+[2025-04-04, 16:14:05] No axis was searched
+[2025-04-04, 16:14:05] Ajin motion driver initialization fail
+[2025-04-04, 16:14:05] Ajin motion driver close
+[2025-04-04, 16:14:24] AxmMoveSStop return error code : 1053
+[2025-04-04, 16:14:24] AxmMoveSStop return error code : 1053
+[2025-04-04, 16:14:30] AxmMoveSStop return error code : 1053
+[2025-04-04, 16:14:30] AxmMoveSStop return error code : 1053
+[2025-04-04, 16:15:25] Axl library initialization completed
+[2025-04-04, 16:15:25] No axis was searched
+[2025-04-04, 16:15:25] Ajin motion driver initialization fail
+[2025-04-04, 16:15:25] Ajin motion driver close
+[2025-04-04, 16:15:59] AxmMoveSStop return error code : 1053
+[2025-04-04, 16:15:59] AxmMoveSStop return error code : 1053
+[2025-04-04, 16:16:51] AxmMoveSStop return error code : 1053
+[2025-04-04, 16:27:23] Axl library initialization completed
+[2025-04-04, 16:27:23] No axis was searched
+[2025-04-04, 16:27:23] Ajin motion driver initialization fail
+[2025-04-04, 16:27:23] Ajin motion driver close
+[2025-04-04, 16:31:43] Axl library initialization completed
+[2025-04-04, 16:31:43] No axis was searched
+[2025-04-04, 16:31:43] Ajin motion driver initialization fail
+[2025-04-04, 16:31:43] Ajin motion driver close
+[2025-04-04, 16:32:03] Axl library initialization completed
+[2025-04-04, 16:32:03] No axis was searched
+[2025-04-04, 16:32:03] Ajin motion driver initialization fail
+[2025-04-04, 16:32:03] Ajin motion driver close
+[2025-04-04, 16:33:30] Axl library initialization completed
+[2025-04-04, 16:33:30] No axis was searched
+[2025-04-04, 16:33:30] Ajin motion driver initialization fail
+[2025-04-04, 16:33:30] Ajin motion driver close

@@ -1,0 +1,35 @@
+[2025-04-04, 16:13:23] CH2_AirValve_Top_o : Off
+[2025-04-04, 16:13:23] CH2_AirValve_Bot_o : Off
+[2025-04-04, 16:13:23] CH2_WaterValve_Top_o : Off
+[2025-04-04, 16:13:23] CH2_AirValve_Top_o : Off
+[2025-04-04, 16:13:23] CH2_AirValve_Bot_o : Off
+[2025-04-04, 16:13:23] CH2_WaterValve_Top_o : Off
+[2025-04-04, 16:13:26] CH2_AirValve_Top_o : Off
+[2025-04-04, 16:13:26] CH2_AirValve_Bot_o : Off
+[2025-04-04, 16:13:26] CH2_WaterValve_Top_o : Off
+[2025-04-04, 16:13:34] CH2_AirValve_Top_o : Off
+[2025-04-04, 16:13:34] CH2_AirValve_Bot_o : Off
+[2025-04-04, 16:13:34] CH2_WaterValve_Top_o : Off
+[2025-04-04, 16:13:35] CH2_AirValve_Top_o : Off
+[2025-04-04, 16:13:35] CH2_AirValve_Bot_o : Off
+[2025-04-04, 16:13:35] CH2_WaterValve_Top_o : Off
+[2025-04-04, 16:13:44] CH2_AirValve_Top_o : Off
+[2025-04-04, 16:13:44] CH2_AirValve_Bot_o : Off
+[2025-04-04, 16:13:44] CH2_WaterValve_Top_o : Off
+[2025-04-04, 16:13:44] CH2_AirValve_Top_o : Off
+[2025-04-04, 16:13:44] CH2_AirValve_Bot_o : Off
+[2025-04-04, 16:13:44] CH2_WaterValve_Top_o : Off
+[2025-04-04, 16:14:06] FluorescentLamp_o : On
+[2025-04-04, 16:15:25] FluorescentLamp_o : On
+[2025-04-04, 16:27:24] FluorescentLamp_o : On
+[2025-04-04, 16:31:44] FluorescentLamp_o : On
+[2025-04-04, 16:32:04] FluorescentLamp_o : On
+[2025-04-04, 16:33:30] FluorescentLamp_o : On
+[2025-04-04, 16:34:18] START THE PROCESS.
+[2025-04-04, 16:34:33] Buzzer_o : On
+[2025-04-04, 16:34:33] PROCESS COMPLETED.
+[2025-04-04, 16:34:33] Tool 이력 데이터가 저장되었습니다
+[2025-04-04, 16:35:36] START THE PROCESS.
+[2025-04-04, 16:35:42] Buzzer_o : On
+[2025-04-04, 16:35:42] PROCESS COMPLETED.
+[2025-04-04, 16:35:42] Tool 이력 데이터가 저장되었습니다

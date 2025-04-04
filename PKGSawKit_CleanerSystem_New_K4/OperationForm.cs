@@ -14,6 +14,7 @@ namespace PKGSawKit_CleanerSystem_New_K4
     {
         RecipeSelectForm recipeSelectForm;
         ToolCheckInfoForm toolCheckInfoForm;
+        ToolInfoRegistForm toolInfoRegistForm;
 
         private Timer logdisplayTimer = new Timer();
 
@@ -42,10 +43,7 @@ namespace PKGSawKit_CleanerSystem_New_K4
             Left = 0;
 
             SetDoubleBuffered(PM1_Door_Close);            
-            SetDoubleBuffered(PM2_Door_Close);
-
-            textBoxCH1ToolBarcode.Focus();
-            //textBoxCH2ToolBarcode.Focus();
+            SetDoubleBuffered(PM2_Door_Close);            
         }
 
         private void SetDoubleBuffered(Control control, bool doubleBuffered = true)
@@ -206,9 +204,7 @@ namespace PKGSawKit_CleanerSystem_New_K4
 
             textBoxPM1ProcessTime.Text = Global.prcsInfo.prcsStepCurrentTime[(byte)MODULE._PM1].ToString() + " / " + Global.prcsInfo.prcsStepTotalTime[(byte)MODULE._PM1].ToString();
             textBoxPM1ProcessEndTime.Text = Global.prcsInfo.prcsEndTime[(byte)MODULE._PM1];
-
-            Define.strToolBarcode[(byte)MODULE._PM1] = textBoxCH1ToolBarcode.Text.ToString();
-
+            
 
             if ((Global.GetDigValue((int)DigInputList.CH1_Brush_Fwd_i) == "On") &&
                 (Global.GetDigValue((int)DigInputList.CH1_Brush_Bwd_i) == "Off") &&
@@ -530,9 +526,7 @@ namespace PKGSawKit_CleanerSystem_New_K4
                 textBoxPM2StepName.Text = Global.prcsInfo.prcsStepName[(byte)MODULE._PM2];
 
             textBoxPM2ProcessTime.Text = Global.prcsInfo.prcsStepCurrentTime[(byte)MODULE._PM2].ToString() + " / " + Global.prcsInfo.prcsStepTotalTime[(byte)MODULE._PM2].ToString();
-            textBoxPM2ProcessEndTime.Text = Global.prcsInfo.prcsEndTime[(byte)MODULE._PM2];
-
-            Define.strToolBarcode[(byte)MODULE._PM2] = textBoxCH2ToolBarcode.Text.ToString();
+            textBoxPM2ProcessEndTime.Text = Global.prcsInfo.prcsEndTime[(byte)MODULE._PM2];            
 
 
             if ((Global.GetDigValue((int)DigInputList.CH2_Nozzle_Fwd_i) == "On") &&
@@ -860,18 +854,23 @@ namespace PKGSawKit_CleanerSystem_New_K4
                                 return;
                             }
                         }
-
+                        
                         if (MessageBox.Show("공정을 진행 하겠습니까?", "알림", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                         {
-                            Define.iSelectRecipeModule = (int)MODULE._PM1;
-
-                            recipeSelectForm = new RecipeSelectForm();
-
-                            if (recipeSelectForm.ShowDialog() == DialogResult.OK)
+                            toolInfoRegistForm = new ToolInfoRegistForm();
+                            toolInfoRegistForm.Init((int)MODULE._PM1);
+                            if (toolInfoRegistForm.ShowDialog() == DialogResult.OK)
                             {
-                                Define.seqMode[(byte)MODULE._PM1] = Define.MODE_PROCESS;
-                                Define.seqCtrl[(byte)MODULE._PM1] = Define.CTRL_RUN;
-                                Define.seqSts[(byte)MODULE._PM1] = Define.STS_IDLE;
+                                Define.iSelectRecipeModule = (int)MODULE._PM1;
+
+                                recipeSelectForm = new RecipeSelectForm();
+
+                                if (recipeSelectForm.ShowDialog() == DialogResult.OK)
+                                {
+                                    Define.seqMode[(byte)MODULE._PM1] = Define.MODE_PROCESS;
+                                    Define.seqCtrl[(byte)MODULE._PM1] = Define.CTRL_RUN;
+                                    Define.seqSts[(byte)MODULE._PM1] = Define.STS_IDLE;
+                                }
                             }
                         }
                     }
@@ -973,15 +972,20 @@ namespace PKGSawKit_CleanerSystem_New_K4
 
                         if (MessageBox.Show("공정을 진행 하겠습니까?", "알림", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                         {
-                            Define.iSelectRecipeModule = (int)MODULE._PM2;
-
-                            recipeSelectForm = new RecipeSelectForm();
-
-                            if (recipeSelectForm.ShowDialog() == DialogResult.OK)
+                            toolInfoRegistForm = new ToolInfoRegistForm();
+                            toolInfoRegistForm.Init((int)MODULE._PM2);
+                            if (toolInfoRegistForm.ShowDialog() == DialogResult.OK)
                             {
-                                Define.seqMode[(byte)MODULE._PM2] = Define.MODE_PROCESS;
-                                Define.seqCtrl[(byte)MODULE._PM2] = Define.CTRL_RUN;
-                                Define.seqSts[(byte)MODULE._PM2] = Define.STS_IDLE;
+                                Define.iSelectRecipeModule = (int)MODULE._PM2;
+
+                                recipeSelectForm = new RecipeSelectForm();
+
+                                if (recipeSelectForm.ShowDialog() == DialogResult.OK)
+                                {
+                                    Define.seqMode[(byte)MODULE._PM2] = Define.MODE_PROCESS;
+                                    Define.seqCtrl[(byte)MODULE._PM2] = Define.CTRL_RUN;
+                                    Define.seqSts[(byte)MODULE._PM2] = Define.STS_IDLE;
+                                }
                             }
                         }
                     }
