@@ -350,7 +350,8 @@ namespace PKGSawKit_CleanerSystem_New_K4
 
             if (Global.digSet.curDigSet[(int)DigOutputList.CH1_WaterValve_Top_o] != null)
             {
-                if (Global.digSet.curDigSet[(int)DigOutputList.CH1_WaterValve_Top_o] == "On")                    
+                if ((Global.digSet.curDigSet[(int)DigOutputList.CH1_WaterValve_Top_o] == "On") ||
+                    (Global.digSet.curDigSet[(int)DigOutputList.CH1_WaterValve_Bot_o] == "On"))
                 {
                     if (!PM1Water1_1.Visible)
                         PM1Water1_1.Visible = true;

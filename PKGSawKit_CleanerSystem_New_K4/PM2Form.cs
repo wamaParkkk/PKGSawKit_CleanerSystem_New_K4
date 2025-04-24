@@ -149,12 +149,8 @@ namespace PKGSawKit_CleanerSystem_New_K4
             }
             else if (Define.seqMode[module] == Define.MODE_IDLE)
             {
-                if (!btnProcess.Enabled)
-                {
-                    btnProcess.Enabled = true;
-
-                    //HostConnection.Host_Set_RunStatus(Global.hostEquipmentInfo, ModuleName, "Idle");
-                }
+                if (!btnProcess.Enabled)                
+                    btnProcess.Enabled = true;                                    
 
                 if (btnProcess.BackColor != Color.Transparent)
                     btnProcess.BackColor = Color.Transparent;
@@ -426,10 +422,23 @@ namespace PKGSawKit_CleanerSystem_New_K4
                 }
             }
 
+            if (Global.digSet.curDigSet[(int)DigOutputList.CH1_Booster_AirValve_o] != null)
+            {
+                if (Global.digSet.curDigSet[(int)DigOutputList.CH1_Booster_AirValve_o] == "On")
+                {
+                    textBoxAirBooster.Text = "Open";
+                    textBoxAirBooster.BackColor = Color.LightSkyBlue;
+                }
+                else
+                {
+                    textBoxAirBooster.Text = "Close";
+                    textBoxAirBooster.BackColor = Color.WhiteSmoke;
+                }
+            }
+
 
             // Daily count
             textBoxDailyCnt.Text = Define.iPM2DailyCnt.ToString("00");
-
         }
 
         private void Eventlog_Display(object sender, ElapsedEventArgs e)
@@ -620,6 +629,23 @@ namespace PKGSawKit_CleanerSystem_New_K4
                             else
                             {
                                 Global.SetDigValue((int)DigOutputList.CH2_Curtain_AirValve_o, (uint)DigitalOffOn.On, ModuleName);
+                            }
+                        }
+                    }
+                    break;
+
+                case "23":
+                    {
+                        digitalDlg.Init("Close", "Open", "CH2 Booster Air Valve");
+                        if (digitalDlg.ShowDialog() == DialogResult.OK)
+                        {
+                            if (digitalDlg.m_strResult == "Close")
+                            {
+                                Global.SetDigValue((int)DigOutputList.CH2_Booster_AirValve_o, (uint)DigitalOffOn.Off, ModuleName);
+                            }
+                            else
+                            {
+                                Global.SetDigValue((int)DigOutputList.CH2_Booster_AirValve_o, (uint)DigitalOffOn.On, ModuleName);
                             }
                         }
                     }

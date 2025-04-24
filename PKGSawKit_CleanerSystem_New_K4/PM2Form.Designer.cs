@@ -85,6 +85,8 @@ namespace PKGSawKit_CleanerSystem_New_K4
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.labelProcessWait = new System.Windows.Forms.Label();
             this.textBoxDoor = new System.Windows.Forms.TextBox();
+            this.textBoxAirBooster = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -340,7 +342,7 @@ namespace PKGSawKit_CleanerSystem_New_K4
             this.groupBox4.Controls.Add(this.textBoxWaterTop);
             this.groupBox4.Controls.Add(this.label17123);
             this.groupBox4.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(984, 333);
+            this.groupBox4.Location = new System.Drawing.Point(984, 369);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(172, 134);
             this.groupBox4.TabIndex = 318;
@@ -374,6 +376,8 @@ namespace PKGSawKit_CleanerSystem_New_K4
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.textBoxAirBooster);
+            this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.textBoxCurtainAir);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.textBoxAirBot);
@@ -383,7 +387,7 @@ namespace PKGSawKit_CleanerSystem_New_K4
             this.groupBox3.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(984, 193);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(172, 134);
+            this.groupBox3.Size = new System.Drawing.Size(172, 170);
             this.groupBox3.TabIndex = 317;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Air Sol";
@@ -820,6 +824,31 @@ namespace PKGSawKit_CleanerSystem_New_K4
             this.textBoxDoor.Text = "--";
             this.textBoxDoor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // textBoxAirBooster
+            // 
+            this.textBoxAirBooster.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textBoxAirBooster.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.textBoxAirBooster.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxAirBooster.Location = new System.Drawing.Point(59, 121);
+            this.textBoxAirBooster.Name = "textBoxAirBooster";
+            this.textBoxAirBooster.ReadOnly = true;
+            this.textBoxAirBooster.Size = new System.Drawing.Size(100, 27);
+            this.textBoxAirBooster.TabIndex = 272;
+            this.textBoxAirBooster.TabStop = false;
+            this.textBoxAirBooster.Tag = "23";
+            this.textBoxAirBooster.Text = "--";
+            this.textBoxAirBooster.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxAirBooster.Click += new System.EventHandler(this.Digital_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(6, 126);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(55, 17);
+            this.label9.TabIndex = 271;
+            this.label9.Text = "Booster";
+            // 
             // PM2Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -933,5 +962,7 @@ namespace PKGSawKit_CleanerSystem_New_K4
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label labelProcessWait;
         private System.Windows.Forms.TextBox textBoxDoor;
+        private System.Windows.Forms.TextBox textBoxAirBooster;
+        private System.Windows.Forms.Label label9;
     }
 }

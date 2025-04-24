@@ -110,12 +110,10 @@
         CH1_AirValve_Top_o = 2,
         CH1_AirValve_Bot_o = 3,
         CH1_WaterValve_Top_o = 4,
-        
-        Spare5_o = 5,
-        
-        CH1_Curtain_AirValve_o = 6,
+        CH1_WaterValve_Bot_o = 5,
 
-        FluorescentLamp_o = 7,
+        CH1_Curtain_AirValve_o = 6,
+        CH1_Booster_AirValve_o = 7,        
 
         CH1_Nozzle_FwdBwd_o = 8,
         
@@ -135,16 +133,15 @@
         CH2_WaterValve_Top_o = 20,
         
         Spare21_o = 21,
-        
-        CH2_Curtain_AirValve_o = 22,
 
-        Spare23_o = 23,
+        CH2_Curtain_AirValve_o = 22,
+        CH2_Booster_AirValve_o = 23,
 
         CH2_Nozzle_FwdBwd_o = 24,
         
         CH2_Nozzle_Pwr_o = 26,
 
-        Spare27_o = 27,
+        FluorescentLamp_o = 27,
 
         Tower_Lamp_Green_o = 28,
         Tower_Lamp_Yellow_o = 29,        
@@ -176,10 +173,9 @@
                 else if (value == "2")      _io_Name = "CH1_AirValve_Top_o";
                 else if (value == "3")      _io_Name = "CH1_AirValve_Bot_o";
                 else if (value == "4")      _io_Name = "CH1_WaterValve_Top_o";
-                else if (value == "5")      _io_Name = "Spare05_o";
+                else if (value == "5")      _io_Name = "CH1_WaterValve_Bot_o";
                 else if (value == "6")      _io_Name = "CH1_Curtain_AirValve_o";
-                
-                else if (value == "7")      _io_Name = "FluorescentLamp_o";
+                else if (value == "7")      _io_Name = "CH1_Booster_AirValve_o";
 
                 else if (value == "8")      _io_Name = "CH1_Nozzle_FwdBwd_o";
                 
@@ -197,17 +193,17 @@
                 else if (value == "18")     _io_Name = "CH2_AirValve_Top_o";
                 else if (value == "19")     _io_Name = "CH2_AirValve_Bot_o";
                 else if (value == "20")     _io_Name = "CH2_WaterValve_Top_o";
+                
                 else if (value == "21")     _io_Name = "Spare21_o";
+                
                 else if (value == "22")     _io_Name = "CH2_Curtain_AirValve_o";
-
-                else if (value == "23")     _io_Name = "Spare23_o";
+                else if (value == "23")     _io_Name = "CH2_Booster_AirValve_o";
 
                 else if (value == "24")     _io_Name = "CH2_Nozzle_FwdBwd_o";
                 
                 else if (value == "26")     _io_Name = "CH2_Nozzle_Pwr_o";
 
-                else if (value == "27")     _io_Name = "Spare27_o";
-
+                else if (value == "27")     _io_Name = "FluorescentLamp_o";
                 else if (value == "28")     _io_Name = "Tower_Lamp_Green_o";
                 else if (value == "29")     _io_Name = "Tower_Lamp_Yellow_o";
                 else if (value == "30")     _io_Name = "Tower_Lamp_Red_o";
@@ -423,5 +419,12 @@
         public static string[] ToolInfoRegist_Tool_DB = { string.Empty, string.Empty };
         public static string[] ToolInfoRegist_Tool_TP = { string.Empty, string.Empty };
         public static string[] ToolInfoRegist_Tool_TT = { string.Empty, string.Empty };
+
+        // Sql서버에 장비 상태 업로드 변수
+        public static string EqType;
+        public static string EqLineCode;
+        public static string EqAsset;
+        public static string EqRemarks1;
+        public static string EqRemarks2;
     }    
 }
