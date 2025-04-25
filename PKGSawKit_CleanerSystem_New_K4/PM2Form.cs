@@ -422,9 +422,9 @@ namespace PKGSawKit_CleanerSystem_New_K4
                 }
             }
 
-            if (Global.digSet.curDigSet[(int)DigOutputList.CH1_Booster_AirValve_o] != null)
+            if (Global.digSet.curDigSet[(int)DigOutputList.CH2_Booster_AirValve_o] != null)
             {
-                if (Global.digSet.curDigSet[(int)DigOutputList.CH1_Booster_AirValve_o] == "On")
+                if (Global.digSet.curDigSet[(int)DigOutputList.CH2_Booster_AirValve_o] == "On")
                 {
                     textBoxAirBooster.Text = "Open";
                     textBoxAirBooster.BackColor = Color.LightSkyBlue;
