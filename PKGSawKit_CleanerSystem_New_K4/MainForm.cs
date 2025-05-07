@@ -1,5 +1,5 @@
 ﻿using Ajin_IO_driver;
-using MsSqlManagerLibrary;
+using MsSqlManagerLibrary_K4;
 using Ajin_motion_driver;
 using System;
 using System.Drawing;
